@@ -121,7 +121,7 @@ int main(){
 	printf("Point de vie du Tank :%d\n",Tank.PV);
   printf("Point de vie du Healer :%d\n",Tank.PV);
   printf("Point de vie du Rogue :%d\n",Tank.PV);
-  char* choix;
+  char* chois;
   lieu lieu[10]={{"Maison","C'est oklm",rand()%20+1,{2,3}},
   {"Foret","Ca fait peur de ouf",rand()%20+1,{1}},
   {"Plaine","Ya rien, le vide absolu",rand()%20+1,{1}}};
@@ -132,7 +132,7 @@ int main(){
     printf("%d: %s\n",i,lieu[lieu[lieuAct].acces[i-1]].nom);
   }
   while(deplacement(&lieuAct,choix,lieu)==1){
-    scanf("%s",choix);
+    scanf("%s",chois);
   }
 	for(i=1;i<=3;i++){
 		do{
